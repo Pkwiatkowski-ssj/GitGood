@@ -9,5 +9,9 @@ public class GitGood {
         do {System.out.println("Count: " + i);
         i++;
         } while ( i <= 10);
-    }
-}
+        int j = 11;
+        while (j < 16) {
+            System.out.println("Count: " +j);
+            j++;
+        }
+}}
