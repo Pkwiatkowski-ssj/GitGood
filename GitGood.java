@@ -14,4 +14,12 @@ public class GitGood {
             System.out.println("Count: " +j);
             j++;
         }
-}}
+        // checking even or odd
+        int num = 10;
+        if (num % 2 ==0) {
+            System.out.println(num +" is an even number");
+        } else { 
+            System.out.println(num + " is an odd number");
+        }
+    }      
+}
