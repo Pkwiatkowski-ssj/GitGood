@@ -1,18 +1,45 @@
+import java.util.ArrayList;// Import ArrayList
 import java.util.Scanner; // Import Scanner for user input
 
 public class GitGood {
     public static void main(String[] args) {
         // ADD METHODS
+        processArray();
         printForLoop();
         printDoWhileLoop();
         printWhileLoop();
         checkEvenOrOdd(10);
         determineDayOfWeek();
+        processList();
     }
+    // Array
 
+    public static void processArray(){
+        System.out.println("\nArray Example (Fixed Size):" );
+
+        int [] numbers = {1, 2, 3, 4, 5};
+
+        for (int num : numbers) {
+            System.out.println("Array Element: " + num);
+        }
+    }
+    // lists
+    public static void processList() {
+    System.out.println("\nArrayList examples: ");
+
+    ArrayList<String> names = new ArrayList<>();
+    names.add("Kilo");
+    names.add("Goku");
+    names.add("GitGood");
+    names.add("Java");
+
+    for (String name : names){
+        System.out.println("List Element: " + name);
+    }
+}
     // 🟢 1. FOR LOOP (Repeats a set number of times)
     public static void printForLoop() {
-        System.out.println("For Loop Example:");
+        System.out.println("\nFor Loop Example:");
         for (int i = 1; i <= 5; i++) {
             System.out.println("For Loop Count: " + i);
         }
